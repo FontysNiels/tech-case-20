@@ -80,33 +80,40 @@ const BatteryStatus = () => {
             <div className="main">
                 <div className="col-lg-12 text-center">
                     <h3>BATTERY STATUS</h3>
-             
+
                 </div>
                 <div className={`battery ${batteryStatusClass}`}>
-                    <div className="d-flex flex-column battery-outer">
+                    <div className="battery-outer">
                         {batteryStrokes.map((stroke, idx) => (
                             <BatteryStroke key={idx} visible={stroke} />
                         ))}
                     </div>
                 </div>
-                <div className="col-12 text-center">
+                <div className="">
                     <h4>Current Battery: {batteryPercent}%</h4>
-                    <div className="col d-inline">
+                    <div className="">
                         {batteryPercent <= 20 && (
-                            <div className="d-inline-block mt-3 alert alert-danger">
+                            <div className="">
                                 Your battery is getting low, save your work and{" "}
                                 <strong>connect your charger</strong> now
                             </div>
                         )}
                         {batteryPercent > 20 && (
-                            <div className="d-inline-block mt-3 alert alert-success">
+                            <div className="">
                                 Your battery is in{" "}
                                 <strong>good condition</strong>
                             </div>
                         )}
                     </div>
                 </div>
-                <span>Charging time: { batteryState.chargingTime ? batteryState.chargingTime : 'finished' }</span> 
+                {batteryState.charging === true &&
+                    <span>Charging time: {batteryState.chargingTime ? batteryState.chargingTime : 'finished'}</span>
+                }
+                {batteryState.charging === false &&
+                    <span>Time Left: {batteryState.dischargingTime ? batteryState.dischargingTime : 'finished'}</span>
+                }
+                
+               
             </div>
         </>
     );
