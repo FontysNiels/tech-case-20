@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tech-case-20/static/css/main.e8ee7886.css",
+    "main.js": "/tech-case-20/static/js/main.cb45bafb.js",
+    "static/js/787.0e7c9357.chunk.js": "/tech-case-20/static/js/787.0e7c9357.chunk.js",
+    "static/media/logo.svg": "/tech-case-20/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tech-case-20/index.html",
+    "main.e8ee7886.css.map": "/tech-case-20/static/css/main.e8ee7886.css.map",
+    "main.cb45bafb.js.map": "/tech-case-20/static/js/main.cb45bafb.js.map",
+    "787.0e7c9357.chunk.js.map": "/tech-case-20/static/js/787.0e7c9357.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8ee7886.css",
+    "static/js/main.cb45bafb.js"
+  ]
+}
