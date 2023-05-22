@@ -110,7 +110,7 @@ const BatteryStatus = () => {
                     <span>Charging time: {batteryState.chargingTime ? batteryState.chargingTime : 'finished'}</span>
                 }
                 {batteryState.charging === false &&
-                    <span>Time Left: {batteryState.dischargingTime ? batteryState.dischargingTime : 'finished'}</span>
+                    <span>Time Left: {(batteryState.dischargingTime / 60).toFixed(2) ? (batteryState.dischargingTime / 60).toFixed(2) : 'finished'} Minutes</span>
                 }
                 
                
